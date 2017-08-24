@@ -1,0 +1,26 @@
+
+
+    <div id="wrap">
+    <div id="regbar">  
+        <div class="login">
+        <div class="arrow-up"></div>
+        <div class="formholder">
+            <div class="randompad">
+             <fieldset>
+                <label name="email">Username</label>
+                <input type="email" #username value =""/>
+                <label name="password">Password</label>
+                <input type="password" #passsword value=""/>
+
+                <button (click)="authenticate(username.value, password.value);">
+                    Login
+                </button>
+    
+            </fieldset> 
+
+
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>

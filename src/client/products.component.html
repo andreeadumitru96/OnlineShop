@@ -1,0 +1,22 @@
+<h2>Products: </h2>
+    <ul class="products">
+        <li *ngFor="let product of products"  
+            [class.selected]="product === selectedProducts" (click)="onSelect(product)" [routerLink]="['/product', product._id]" >  
+            {{product.title}}
+        </li>
+    </ul>
+
+    Title: <input #title/> <br>
+    Category: <input #category/> <br>
+    Specifications: <input #specifications/>
+    <br>
+    <div>
+        <button (click)="createProduct(title.value, category.value, specifications.value); ">
+            Add 
+        </button>
+    </div>
+
+
+    
+
+    
